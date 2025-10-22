@@ -1,5 +1,5 @@
 // Set deployed API base URL here (e.g., https://your-app.onrender.com)
-const API_BASE = "https://medical-diagnosis-api.onrender.com";
+const API_BASE = window.API_BASE || "http://localhost:8000";
 
 async function fetchSchema(){
   const r = await fetch(`${API_BASE}/schema`);
