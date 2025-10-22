@@ -1,0 +1,17 @@
+:root { --bg:#0b1020; --fg:#e8eef6; --card:#131a2b; --accent:#6aa0ff; }
+*{ box-sizing:border-box; }
+body{ margin:0; font-family:Inter,system-ui,Segoe UI,Roboto,Arial; background:var(--bg); color:var(--fg); }
+main{ max-width:920px; margin:40px auto; padding:0 16px; }
+h1{ margin:0 0 8px; }
+.note{ opacity:.8; margin-bottom:24px; }
+.card{ background:var(--card); padding:16px; border-radius:14px; box-shadow:0 4px 16px rgba(0,0,0,.3); }
+#symptoms{ display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr)); gap:12px; }
+.symptom{ padding:12px; border-radius:12px; background:#0f1526; display:flex; align-items:center; justify-content:space-between; }
+.symptom label{ font-size:14px; }
+.symptom input{ width:90px; }
+.actions{ margin:20px 0; }
+button{ background:var(--accent); border:none; color:#081020; font-weight:700; padding:12px 18px; border-radius:10px; cursor:pointer; }
+.hidden{ display:none; }
+#result h3{ margin-top:0; }
+.proba{ display:grid; grid-template-columns:1fr auto; gap:6px; }
+.proba div{ padding:6px 8px; border-bottom:1px solid #223; }
